@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Basics</title>
+    <style>
+        body { 
+            font-family: 'Verdana', sans-serif; 
+            text-align: center; 
+            background-color: #f4f4f4; 
+            padding: 20px; 
+        }
+        .container { 
+            width: 60%; 
+            margin: auto; 
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img { 
+            width: 250px; 
+            display: block; 
+            margin: 10px auto;
+        }
+        .caption { 
+            font-style: italic; 
+            color: #555; 
+        }
+        p { 
+            font-family: 'Georgia', serif; 
+            line-height: 1.6; 
+            text-align: justify; 
+        }
+        button { 
+            padding: 12px 20px; 
+            background: green; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        button:hover { 
+            background: darkgreen; 
+        }
+        table { 
+            border-collapse: collapse; 
+            margin: auto; 
+            width: 80%; 
+        }
+        table, th, td { 
+            border: 1px solid black; 
+            padding: 10px; 
+        }
+        form {
+            margin-top: 20px;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .spacer { margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Introduction to Web Development (Assignment -1)</h1>
+        <p>Web development is an essential skill for creating interactive and dynamic websites. Learning HTML and CSS is the foundation of this journey.</p>
+        <p>Understanding these technologies enables developers to design visually appealing and well-structured web pages.</p>
+        <img src="https://systemintegration.in/wp-content/uploads/2024/05/html-and-css-exposing-the-dynamic-pair-in-web-development-bmv-system-integration.webp" alt="Web Development Image">
+        <p class="caption">Illustration of HTML , CSS</p>
+        <button>Learn More</button>
+
+        <div class="spacer"></div>
+
+        <table>
+            <tr><th>Course</th><th>Duration</th><th>Level</th></tr>
+            <tr><td>HTML & CSS</td><td>4 Weeks</td><td>Beginner</td></tr>
+            <tr><td>JavaScript</td><td>6 Weeks</td><td>Intermediate</td></tr>
+            <tr><td>React.js</td><td>8 Weeks</td><td>Advanced</td></tr>
+        </table>
+
+        <form>
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <div class="spacer"></div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Assignment</title>
+</head>
+<body>
+    <h1>JavaScript Assignment Output</h1>
+    <p id="age"></p>
+    <p id="operations"></p>
+    <p id="evenodd"></p>
+    <p id="array"></p>
+    <p id="square"></p>
+
+    <script>
+        // 1: Declare a variable age and check if adult
+        let age = 25;
+        let isAdult = age >= 18;
+        document.getElementById("age").innerHTML = "Is Adult: " + isAdult;
+
+        // 2: Perform operations with x and y
+        let x = 10;
+        let y = 5;
+        let addition = x + y;
+        let multiplication = x * y;
+        let modulus = x % y;
+        document.getElementById("operations").innerHTML = 
+            "Addition: " + addition + "<br>" +
+            "Multiplication: " + multiplication + "<br>" +
+            "Modulus: " + modulus;
+
+        // 3: Check if a number is even or odd
+        let n = 9; // Example number
+        let isEven = (n % 2 === 0) ? "Even" : "Odd";
+        document.getElementById("evenodd").innerHTML = `The number ${n} is ${isEven}`;
+
+        // 4: Store numbers from 1 to 5 in an array
+        let numbersArray = [];
+        for (let i = 1; i <= 5; i++) {
+            numbersArray.push(i);
+        }
+        document.getElementById("array").innerHTML = "Numbers array: " + numbersArray.join(", ");
+
+        // 5: Function to return square of a number
+        function square(num) {
+            return num * num;
+        }
+        document.getElementById("square").innerHTML = "Square of 6: " + square(6);
+    </script>
+</body>
+</html>
